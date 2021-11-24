@@ -40,6 +40,8 @@ Note that this board does not provide intrinsic lipo protection. However, almost
  
  When in doubt, consult the original GBP schmatic, and look at the schematic of this board.
  
+ I recommend trimming the plastic on the pin headers if the pcb is too close to the pocket plastic shell.
+ 
 ![alt text](pcb.jpg "isn't it beautiful")
  
  
