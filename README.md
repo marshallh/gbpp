@@ -1,6 +1,9 @@
 # gbpp
  Replacement power regulator for Game Boy Pocket.
  
+ ![alt text](pcb.jpg "isn't it beautiful")
+ 
+ 
  The GBP famously cannot handle running many flash carts reliably. And if you add an IPS mod, it probably won't even boot.
  Now if you use this board, you can run anything you want all at once, and even from a lipo cell.
  
@@ -41,9 +44,7 @@ Note that this board does not provide intrinsic lipo protection. However, almost
  When in doubt, consult the original GBP schmatic, and look at the schematic of this board.
  
  I recommend trimming the plastic on the pin headers if the pcb is too close to the pocket plastic shell.
- 
-![alt text](pcb.jpg "isn't it beautiful")
- 
+  
  
 Here it is installed in the Pocket Color I built
 ![alt text](complete.jpg "hotness 1")
