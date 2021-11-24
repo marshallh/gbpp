@@ -11,6 +11,7 @@
  * Wire up to a 5V source, such as USB-C to charge the battery
  * Charging LED - shuts off when charging is complete
  * Running off original AAA also works but may not handle IPS mods or EZflash because the cells cannot supply enough current
+ * Removes LCD Vee supply, so IPS mod is necessary (or make your own -18V regulator)
 
 
 Please use the zipped gerbers, and buy parts from the BOM. I strongly recommend using a reflow oven to build this, QFNs require it. Hot air may be possible but dicey. Do not try this as your first soldering project.
