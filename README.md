@@ -10,7 +10,7 @@
  * Lithium ion cell charge & play support (charge rate: 256mA)
  * Wire up to a 5V source, such as USB-C to charge the battery
  * Charging LED - shuts off when charging is complete
- * Running off original AAA also works but may not handle IPS mods or EZflash because the cells cannot supply enough current
+ * Running off original AAA also works but may not handle IPS mods or EZ-Flash because the alkaline cells cannot supply enough current
  * Removes LCD Vee supply, so IPS mod is necessary (or make your own -18V regulator)
 
 
@@ -19,14 +19,14 @@ Please use the zipped gerbers, and buy parts from the BOM. I strongly recommend 
 ## Assembly:
 
 1. Use a paste stencil from OSHStencils or a very thin steel stencil. Use leadfree paste and only apply in 1 pass for sharpest transfer
-2. Place all parts. Make sure U1 and U2 are not swapped, and pin1 is correct.
+2. Place all parts. Make sure U1 and U2 are not swapped, and pin 1 is correct.
 3. Reflow up to 230-250C.
 4. Solder in two 3-pin male pin headers, one with the middle pin removed via pliers.
-5. Solder wires to battery and/or 5v charge source (external usbc port), and solder a wire to connect SYS to the Pocket power input. Do this now as it gets harder once the pcb is soldered in place.
-6. Install the pinned PCB into the gameboy pocket PCB.
+5. Solder wires to battery and/or 5v charge source (external USB-C port), and solder a wire to connect SYS to the Pocket power input. Do this now as it gets harder once the pcb is soldered in place.
+6. Install the pinned PCB into the Gameboy Pocket PCB.
 
 ## Net names:
-CHG5V: Solder your 5v source from a USB port here. If you dont' know how to wire a USBC port, refer to the internet. Present on both the front and back of the pcb for easy access.
+CHG5V: Solder your 5v source from a USB port here. If you don't know how to wire a USB-C port, refer to the internet. Present on both the front and back of the pcb for easy access.
 
 VBAT+: Lipo battery pos terminal (NOT the AAA battery contacts on the pocket)
 
@@ -37,14 +37,25 @@ SYS: Solder to the power input on the gameboy. The fuse near the headphone jack 
 
 Note that this board does not provide intrinsic lipo protection. However, almost all cells available already have a BMS board preinstalled.
  
+ 
+## Optional 5V regulator only (no charging)
+If you only need a 5V regulator, and intend to use the original alkaline cells without any charging circuitry, then you may omit the bottom half of the PCB. The parts to leave off are
+
+C6 C7 C8 C9 C10 R1 R2 R3 R4 R5 U2 D1
+
+It will no longer be necessary to add any wires, such as CHG5V or SYS. 
+
+
+## Board Preview
+
 ![alt text](pcb_3d_1.png "front view")
 ![alt text](pcb_3d_2.png "back view")
  
  ## Troubleshooting:
  
- When in doubt, consult the original GBP schmatic, and look at the schematic of this board.
+When in doubt, consult the original GBP schematic, and look at the schematic of this board.
  
- I recommend trimming the plastic on the pin headers if the pcb is too close to the pocket plastic shell.
+I recommend trimming the plastic on the pin headers if the pcb is too close to the pocket plastic shell.
   
  
 Here it is installed in the Pocket Color I built
